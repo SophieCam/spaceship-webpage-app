@@ -1,5 +1,5 @@
-<h2>Starships</h2>
-<ul class="starships">
+<h1>Starships</h1>
+<div class="starships">
     <li *ngFor="let starship of starships" 
     [class.selected]="starship === selectedStarship"
     (click)="onSelect(starship)">
@@ -7,15 +7,18 @@
         {{starship.name}} | 
         <i>{{starship.commander}}</i>
     </li>
-</ul>
+  </div>
 
-<div *ngIf="selectedStarship">
+<div class= "starshipDetails "*ngIf="selectedStarship">
 
-    <h2>{{selectedStarship.name}} Details</h2>
+    <h3>{{selectedStarship.name}} Starship</h3>
     <div><span>id: </span>{{selectedStarship.id}}</div>
+    <div><span>empire: </span>{{selectedStarship.empire}}</div>
+    <div><span>length: </span>{{selectedStarship.length}}</div>
+    <div><span>film: </span>{{selectedStarship.film}}</div>
     <div>
       <label>commander:
-        <input [(ngModel)]="selectedStarship.commander" placeholder="commander"/>
+        <input [(ngModel)]="selectedStarship.commander" placeholder="update commander"/>
       </label>
     </div>
   

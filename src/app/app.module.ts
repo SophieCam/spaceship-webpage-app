@@ -8,7 +8,8 @@ import { StarshipsComponent } from './starships/starships.component';
 @NgModule({
   declarations: [
     AppComponent,
-    StarshipsComponent
+    StarshipsComponent,
+   
   ],
   imports: [
     BrowserModule,
