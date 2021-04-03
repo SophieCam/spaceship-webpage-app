@@ -1,10 +1,12 @@
 .starshipDetails {
-    color: aqua;
+    color: black;
+    font-weight: bolder;
 }
 
 h1 {
 color: aqua;
 text-align: center;
+font-weight: bolder;
 }
 
 .starships {
